@@ -6,8 +6,6 @@ import "swiper/css/free-mode"
 import "swiper/css/pagination"
 import "swiper/css/navigation"
 
-import "./MainBanner.module.css"
-
 import { Autoplay, FreeMode, Pagination } from "swiper/modules"
 import { useAppDispatch, useAppSelector } from "../../../app/hooks"
 import { getMainBannerAsync } from "../homeAsync"
@@ -24,7 +22,7 @@ export default function MainBanner() {
       <Swiper
         pagination={true}
         modules={[Pagination]}
-        className="sm:block md:hidden h-[187px]"
+        className="sm:block md:hidden h-[187.5px] "
       >
         {mainBanner.map(banner => {
           return (
@@ -32,7 +30,7 @@ export default function MainBanner() {
               <img
                 src={banner.pcImageUrl}
                 alt={banner.title}
-                className="h-full object-contain"
+                className="h-full w-full "
               />
             </SwiperSlide>
           )
@@ -53,7 +51,7 @@ export default function MainBanner() {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, FreeMode, Pagination]}
-        className="h-[323px] mySwiper hidden"
+        className="h-[323px] mySwiper hidden md:block"
       >
         {mainBanner.map(banner => {
           return (

@@ -19,8 +19,6 @@ import "swiper/css/navigation"
 
 import "swiper/swiper-bundle.css"
 
-import "./ProductCardList.module.css"
-
 interface CardProp {
   items: Item2
 }
