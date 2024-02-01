@@ -1,0 +1,10 @@
+.swiper-button-prev,
+.swiper-button-next {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.swiper-slide-active .swiper-button-prev,
+.swiper-slide-active .swiper-button-next {
+  opacity: 1;
+}

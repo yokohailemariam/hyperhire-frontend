@@ -105,7 +105,7 @@ interface Media2 {
   type: string
 }
 
-interface Items9 {
+export interface Items9 {
   createdAt: string
   updatedAt: string
   deletedAt?: any
@@ -157,7 +157,7 @@ interface Discount3 {
   remain?: any
 }
 
-interface Items8 {
+export interface Items8 {
   createdAt: string
   updatedAt: string
   deletedAt?: any
@@ -197,7 +197,7 @@ interface Publication8 {
   applyCoupon: boolean
 }
 
-interface Items7 {
+export interface Items7 {
   createdAt: string
   updatedAt: string
   deletedAt?: any
@@ -237,7 +237,7 @@ interface Publication7 {
   applyCoupon: boolean
 }
 
-interface Items6 {
+export interface Items6 {
   createdAt: string
   updatedAt: string
   deletedAt?: any
@@ -297,7 +297,7 @@ interface PriceInfo4 {
   couponDiscountRate?: number
 }
 
-interface Items5 {
+export interface Items5 {
   createdAt: string
   updatedAt: string
   deletedAt?: any
@@ -346,7 +346,7 @@ interface PriceInfo3 {
   couponDiscountRate: number
 }
 
-interface Items4 {
+export interface Items4 {
   createdAt: string
   updatedAt: string
   deletedAt?: any
@@ -386,7 +386,7 @@ interface Publication4 {
   applyCoupon: boolean
 }
 
-interface Items3 {
+export interface Items3 {
   createdAt: string
   updatedAt: string
   deletedAt?: any
@@ -426,7 +426,7 @@ interface Publication3 {
   applyCoupon: boolean
 }
 
-interface Items2 {
+export interface Items2 {
   createdAt: string
   updatedAt: string
   deletedAt?: any
@@ -473,7 +473,7 @@ interface PriceInfo2 {
   discountRate?: number
 }
 
-interface Item {
+export interface Item {
   createdAt: string
   updatedAt: string
   deletedAt?: any

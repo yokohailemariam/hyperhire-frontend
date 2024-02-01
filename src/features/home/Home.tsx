@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from "react"
 import { useAppDispatch, useAppSelector } from "../../app/hooks"
-import MainBanner from "./components/ImageCarousel"
+import MainBanner from "./components/MainBanner"
 import MainShortcut from "./components/MainShortcut"
 import { getMainExhibitionAsync } from "./homeAsync"
 import { ProductCardList } from "./components/ProductCardList"

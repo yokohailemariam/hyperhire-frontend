@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom"
 const Navbar = () => {
   return (
     <>
-      <nav className="sticky top-0 border-b border-zinc-100 h-[72px] overflow-hidden bg-white z-50">
+      <nav className="hidden md:block sticky top-0 border-b border-zinc-100 h-[72px] bg-white z-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8  ">
           <div className="flex items-center justify-between h-[72px]">
             <div className="flex gap-4  items-center ">
@@ -65,6 +65,60 @@ const Navbar = () => {
               <button className="px-2 text-[16px]">로그인 / 회원가입</button>
             </div>
           </div>
+        </div>
+      </nav>
+
+      <nav className="sm:block md:hidden">
+        <div className="flex justify-between items-center h-[55px] px-4">
+          <img
+            src="https://www.testvalley.kr/logo/logo-new.svg"
+            alt="testvalley"
+          />
+          <div className="flex gap-4">
+            <img
+              src="	https://www.testvalley.kr/common/bell_default.svg"
+              alt="testvalley"
+            />
+            <img
+              src="https://www.testvalley.kr/common/search_new.svg"
+              alt="testvalley"
+            />
+          </div>
+        </div>
+      </nav>
+
+      <nav className="sm:block md:hidden fixed bottom-0 flex justify-between items-center z-50 bg-white h-[70px]  w-screen px-6 text-center">
+        <div className="space-y-2 flex flex-col items-center">
+          <img src="https://www.testvalley.kr/navibar/ico-home-on.svg" alt="" />
+          <p className="text-[11px]">홈</p>
+        </div>
+        <div className="space-y-2 flex flex-col items-center">
+          <img
+            src="https://www.testvalley.kr/navibar/ico-search-off.svg"
+            alt=""
+          />
+          <p className="text-[11px]">검색</p>
+        </div>
+        <div className="space-y-2 flex flex-col items-center">
+          <img
+            src="https://www.testvalley.kr/navibar/ico-category-off.svg"
+            alt=""
+          />
+          <p className="text-[11px]">카테고리</p>
+        </div>
+        <div className="space-y-2 flex flex-col items-center">
+          <img
+            src="https://www.testvalley.kr/navibar/ico-likelist-off.svg"
+            alt=""
+          />
+          <p className="text-[11px]">좋아요</p>
+        </div>
+        <div className="space-y-2 flex flex-col items-center">
+          <img
+            src="https://www.testvalley.kr/navibar/ico-mypage-off.svg"
+            alt=""
+          />
+          <p className="text-[11px]">마이페이지</p>
         </div>
       </nav>
 
